@@ -1,6 +1,9 @@
 import java.util.ArrayDeque;
 import java.util.Queue;
 
+/**
+ * 공항 여권 입장(?) 순서 구하기
+ */
 public class Entry {
 
     Queue<String> queue = new ArrayDeque<>();
