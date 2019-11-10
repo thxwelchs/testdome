@@ -1,5 +1,8 @@
 import java.util.*;
 
+/**
+ * 자식 노드가 2개 이상인 가지 노드 수를 구한다.
+ */
 public class Branches {
     public static int count(int[] tree) {
 
