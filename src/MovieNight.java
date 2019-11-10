@@ -1,6 +1,9 @@
 import java.util.*;
 import java.text.SimpleDateFormat;
 
+/**
+ * 영화를 겹치지 않게 모두 볼 수 있는지 체크
+ */
 public class MovieNight {
     public static Boolean canViewAll(Collection<Movie> movies) {
         List<Movie> movieList = (List<Movie>) movies;
