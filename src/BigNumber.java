@@ -67,7 +67,7 @@ public class BigNumber {
         List<Integer> result = Arrays.asList(1);
         
         for(int i = 1; i <= 100; i++) {
-            result = multiplication(result, Arrays.asList(i));
+            result = longMultiplication(result, Arrays.asList(i));
         }
 
         StringBuilder sb = new StringBuilder();
@@ -81,7 +81,15 @@ public class BigNumber {
 //        System.out.println("multiplyByNotBigInteger result" + result);
     }
 
-    private static List<Integer> multiplication(List<Integer> a, List<Integer> b) {
+    /**
+     * 사람이 보통 곱셈을 할 때 사용하는 LongMultiplication을 활용한 방법
+     * 오버플로우 되지 않게 각 곱해지는 한자리의 인수들을 List에 넣어 연산한다.
+     *
+     * @param a
+     * @param b
+     * @return
+     */
+    private static List<Integer> longMultiplication(List<Integer> a, List<Integer> b) {
         
         if((a.size() == 1 && a.get(0) == 0) || (b.size() == 1 && b.get(0) == 0)) {
             return new ArrayList<Integer>() {{ add(0); }};
@@ -125,6 +133,10 @@ public class BigNumber {
             list.add(stack);
         }
 
+        /*
+        * 여기서 부터는 각 자릿수별로 첫번째 인수와 곱해진 수들을 스택에서 꺼내서 더하는 부분
+        * 귀찮아서 더 이상 주석은.. 생략
+        * */
         int len = list.size() - 1;
         List<Integer> result = new ArrayList<>();
 
