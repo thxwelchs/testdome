@@ -66,7 +66,7 @@ public class BigNumber {
     private static void multiplyByNotBigInteger() {
         List<Integer> result = Arrays.asList(1);
         
-        for(int i = 1; i <= 100; i++) {
+        for(int i = 1; i <= 1000; i++) {
             result = longMultiplication(result, Arrays.asList(i));
         }
 
