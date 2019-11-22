@@ -3,6 +3,9 @@ import sun.misc.Queue;
 import java.util.LinkedList;
 import java.util.Stack;
 
+/**
+ * Graph 클래스와 Node inner 클래스를 이용해서 DFS, BFS 그래프 탐색을 구현 해본다.
+ */
 class Graph {
     class Node {
         int data;
