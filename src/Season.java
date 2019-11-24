@@ -1,6 +1,14 @@
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ *  T배열이 주어지고 T배열 원소에는 계절의 온도로 이루어져 있고 배열의 원소를 순서대로 4분기 시키면 계절별 온도이다.
+ *  계절은 "WINTER", "SPRING", "SUMMER", "AUTUMN" 순으로 이루어져 있다.
+ *  진폭의 값은 계절의 최고온도와 최저온도의 차이이다.
+ *
+ *  매개변수가 주어졌을 때 진폭의 값이 가장 높은 계절을 반환
+ *  example) T [-3, -14, -5, 7, 8, 42, 8, 3] -> return "SUMMER"
+ */
 public class Season {
     public static void main(String[] args) {
         String result = solution(new int[]{-3, -14, -5, 7, 8, 42, 8, 3});
