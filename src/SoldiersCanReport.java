@@ -1,6 +1,10 @@
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * N등급의 군인이 있고, N+1등급의 군인에게 경례할 수 있을 때
+ * 경례할 수 있는 횟수를 구하기
+ */
 public class SoldiersCanReport {
     public static void main(String[] args) {
         int[] ranks = new int[]{3, 4, 3, 0, 2, 2, 3, 0, 0};
