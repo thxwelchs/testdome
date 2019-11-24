@@ -1,3 +1,7 @@
+/**
+ * 시간단위 T를 인자로 받았을 때
+ * 23h59m59s 형태로 나타내개
+ */
 public class TimeFormat {
     public static void main(String[] args) {
         String result = format(86400);
